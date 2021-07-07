@@ -20,7 +20,7 @@ public class Car {
 		
 
 	public void printData() {
-		System.out.println("Id: " + id + " license: " + license + " driver: " + driver.name + " passengers: " + passenger);
+		System.out.println("Id: " + id + " license: " + license + " driver: " + driver.getName() + " passengers: " + passenger);
 	}
 
 	public Integer getPassenger() {
@@ -33,5 +33,31 @@ public class Car {
 		else
 			System.out.println("Necesitas asignar 4 pasajeros");
 	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getLicense() {
+		return license;
+	}
+
+	public void setLicense(String license) {
+		this.license = license;
+	}
+
+	public Account getDriver() {
+		return driver;
+	}
+
+	public void setDriver(Account driver) {
+		this.driver = driver;
+	}
+
+	
 
 }
