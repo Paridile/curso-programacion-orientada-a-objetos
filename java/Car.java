@@ -15,10 +15,23 @@ public class Car {
 
 	public Car(String license, Account driver) {
 		this.license = license;
-		this.driver = driver;
+		this.driver = driver;		
 	}
+		
 
-	void printData() {
+	public void printData() {
 		System.out.println("Id: " + id + " license: " + license + " driver: " + driver.name + " passengers: " + passenger);
 	}
+
+	public Integer getPassenger() {
+		return passenger;
+	}
+
+	public void setPassenger(Integer passenger) {
+		if(passenger == 4)
+			this.passenger = passenger;
+		else
+			System.out.println("Necesitas asignar 4 pasajeros");
+	}
+
 }
